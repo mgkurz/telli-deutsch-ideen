@@ -18,7 +18,7 @@ Zusätzlich gibt es eine Querschnittskategorie **Inklusion / Differenzierung / D
 
 ## Live ansehen
 
-👉 [https://mgkurz.github.io/telli-deutsch-ideen/](https://mgkurz.github.io/telli-deutsch-ideen/)
+👉 [https://mgkurz.github.io/-telli-deutsch-ideen/](https://mgkurz.github.io/-telli-deutsch-ideen/)
 
 ## Technik
 
