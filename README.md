@@ -27,7 +27,7 @@ Zusätzlich gibt es eine Querschnittskategorie **Inklusion / Differenzierung / D
 - Filter nach Schulstufe und telli-Ebene
 - Responsive (iPad + Laptop)
 - Datenschutzerklärung integriert (Hash-Routing)
-- Einzige externe Abhängigkeit: Google Fonts (Source Sans 3, OFL-Lizenz)
+- Keine externen Abhängigkeiten – läuft komplett ohne Verbindung zu Drittanbietern
 
 ## Deployment
 
