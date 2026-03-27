@@ -283,6 +283,7 @@ a:hover { color: var(--color-accent); }
   font-family: inherit;
 }
 .reset-link:hover { color: var(--color-accent-dark); }
+.filter-divider { color: var(--color-border); font-size: 0.85rem; }
 
 /* ═══════════════════════════════════════════
    Catalog Cards
@@ -474,6 +475,45 @@ a:hover { color: var(--color-accent); }
 }
 
 /* ═══════════════════════════════════════════
+   Datenschutz Page (hash-routed)
+   ═══════════════════════════════════════════ */
+.page-datenschutz {
+  display: none;
+  padding: 2.5rem 0 3rem;
+}
+.page-datenschutz.visible { display: block; }
+
+.page-datenschutz h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent-dark);
+  margin-bottom: 1.5rem;
+}
+.page-datenschutz h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.page-datenschutz p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+  max-width: 680px;
+}
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+.back-link:hover { color: var(--color-accent-dark); }
+
+.main-content.hidden-by-route { display: none; }
+
+/* ═══════════════════════════════════════════
    Empty State
    ═══════════════════════════════════════════ */
 .empty-state {
@@ -499,6 +539,7 @@ a:hover { color: var(--color-accent); }
 </head>
 <body>
 
+<div class="main-content" id="mainContent">
 <!-- ════════ HEADER ════════ -->
 <header class="site-header">
   <div class="container">
@@ -573,6 +614,8 @@ a:hover { color: var(--color-accent); }
     <div class="filter-meta">
       <span><span class="count" id="visibleCount">0</span> von 42 Beispielen</span>
       <button class="reset-link" id="resetBtn">Alle anzeigen</button>
+      <span class="filter-divider">·</span>
+      <button class="reset-link" id="clearBtn">Alle abwählen</button>
     </div>
   </div>
 </div>
@@ -607,9 +650,56 @@ a:hover { color: var(--color-accent); }
 <!-- ════════ FOOTER ════════ -->
 <footer class="site-footer">
   <div class="container">
-    CC BY-SA 4.0 · Hessische Lehrkräfteakademie · 2026 · Ansprechperson: Martin Kurz · <a href="mailto:medialab@bildung.hessen.de">medialab@bildung.hessen.de</a>
+    <div>CC BY-SA 4.0 · Hessische Lehrkräfteakademie · 2026 · Ansprechperson: Martin Kurz · <a href="mailto:medialab@bildung.hessen.de">medialab@bildung.hessen.de</a></div>
+    <div style="margin-top:0.4rem"><a href="#datenschutz">Datenschutzerklärung</a></div>
   </div>
 </footer>
+</div><!-- /main-content -->
+
+<!-- ════════ DATENSCHUTZ (hash-routed) ════════ -->
+<section class="page-datenschutz" id="pageDatenschutz">
+  <div class="container">
+    <a href="#" class="back-link">← Zurück zur Übersicht</a>
+    <h1>Datenschutzerklärung</h1>
+
+    <h2>Verantwortlich</h2>
+    <p>
+      Martin Kurz<br>
+      Hessische Lehrkräfteakademie, Dezernat II.3 Medien<br>
+      Lahnstraße 61, 35389 Gießen<br>
+      E-Mail: <a href="mailto:medialab@bildung.hessen.de">medialab@bildung.hessen.de</a>
+    </p>
+    <p>
+      Diese Website wurde im Rahmen einer dienstlichen Tätigkeit an der Hessischen Lehrkräfteakademie erstellt. Das Hosting erfolgt über ein privates GitHub-Konto.
+    </p>
+
+    <h2>Hosting</h2>
+    <p>
+      Diese Website wird über GitHub Pages betrieben (GitHub Inc., 88 Colin P. Kelly Jr St, San Francisco, CA 94107, USA). Beim Aufruf der Seite werden durch GitHub automatisch technische Daten verarbeitet, insbesondere die IP-Adresse, Browser- und Betriebssysteminformationen, Referrer-URL sowie Zeitpunkt des Zugriffs. Auf diese Daten haben wir keinen direkten Zugriff. GitHub speichert diese Daten in Server-Logfiles.
+    </p>
+    <p>
+      Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bereitstellung der Website). GitHub ist unter dem EU-U.S. Data Privacy Framework zertifiziert und nutzt zusätzlich Standardvertragsklauseln (SCCs) als Grundlage für den Datentransfer.
+    </p>
+    <p>
+      Weitere Informationen: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>
+    </p>
+
+    <h2>Externe Schriftarten</h2>
+    <p>
+      Diese Website verwendet die Schriftart „Source Sans 3" von Google Fonts. Beim Laden der Schrift wird eine Verbindung zu Servern von Google (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) hergestellt. Dabei wird Ihre IP-Adresse an Google übermittelt. Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Datenschutzerklärung</a>.
+    </p>
+
+    <h2>Kein Tracking</h2>
+    <p>
+      Diese Website setzt keine Cookies und keine Analyse-Tools ein. Es findet kein Tracking statt.
+    </p>
+
+    <h2>Ihre Rechte</h2>
+    <p>
+      Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch sowie Beschwerde beim Hessischen Beauftragten für Datenschutz und Informationsfreiheit (Gustav-Stresemann-Ring 1, 65189 Wiesbaden).
+    </p>
+  </div>
+</section>
 
 <script>
 /* ═══════════════════════════════════════════
@@ -773,8 +863,31 @@ resetBtn.addEventListener("click", () => {
   applyFilters();
 });
 
+document.getElementById("clearBtn").addEventListener("click", () => {
+  [...levelChips, ...typeChips].forEach(c => c.classList.remove("active"));
+  applyFilters();
+});
+
 // Initial state: no filters active, all cards hidden, empty state visible
 applyFilters();
+
+/* ═══════════════════════════════════════════
+   Hash routing (main ↔ datenschutz)
+   ═══════════════════════════════════════════ */
+function handleRoute() {
+  const mainEl = document.getElementById("mainContent");
+  const dsEl = document.getElementById("pageDatenschutz");
+  if (window.location.hash === "#datenschutz") {
+    mainEl.classList.add("hidden-by-route");
+    dsEl.classList.add("visible");
+    window.scrollTo(0, 0);
+  } else {
+    mainEl.classList.remove("hidden-by-route");
+    dsEl.classList.remove("visible");
+  }
+}
+window.addEventListener("hashchange", handleRoute);
+handleRoute();
 </script>
 </body>
 </html>
