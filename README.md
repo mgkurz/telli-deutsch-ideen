@@ -18,7 +18,7 @@ Die Beispiele decken fünf telli-Konfigurationsebenen ab:
 
 ## Live ansehen
 
-👉 [https://mgkurz.github.io/-telli-deutsch-ideen/](https://mgkurz.github.io/-telli-deutsch-ideen/)
+👉 [https://mgkurz.github.io/telli-deutsch-ideen/](https://mgkurz.github.io/telli-deutsch-ideen/)
 
 ## Funktionen
 
