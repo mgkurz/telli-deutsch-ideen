@@ -35,7 +35,7 @@ Datei `index.html` ins Repo legen, GitHub Pages auf den `main`-Branch zeigen las
 
 ## Lizenz
 
-CC BY-SA 4.0 · Hessische Lehrkräfteakademie, Martin Kurz · 2026
+CC BY-SA 4.0 · Hessische Lehrkräfteakademie · Martin Kurz
 
 ## Kontakt
 
